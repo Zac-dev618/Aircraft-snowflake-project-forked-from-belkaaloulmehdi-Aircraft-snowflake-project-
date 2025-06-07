@@ -1,64 +1,59 @@
-# Projet Aircraft DB - Analyse SQL avec Snowflake
+# Aircraft Data Analysis Project
+
+## 📌 Project Overview
+
+This project aims to analyze an aircraft database using SQL on Snowflake, a cloud data platform.  
+The objective is to answer key business questions regarding flights, passenger traffic, and airline performance using SQL queries on a comprehensive dataset.
 
 ---
 
-## Contexte
+## 📜 Dataset & Context
 
-Ce projet a été réalisé dans le cadre de ma formation Data Analyst au bootcamp Jedha.  
-Il consiste à analyser une base de données aéronautique via Snowflake, une plateforme cloud SQL performante et scalable.  
-
-Le dataset est chargé via un script SQL complet qui crée les tables et insère les données.  
-Mon travail est d’écrire des requêtes SQL pour répondre à plusieurs questions métier et extraire des insights pertinents.
+The dataset is provided as a full SQL script that creates the database `AIRCRAFT_DB` with all necessary tables (`aircraft`, `airlines`, `airports`, `flight_summary_data`, `individual_flights`) and populates them with data.  
+This project was completed as part of my Data Analyst training at Jedha Bootcamp.
 
 ---
 
-## Énoncé du projet
+## 📂 Project Structure
 
-À partir du script SQL fourni, qui crée la base de données `AIRCRAFT_DB` et ses tables principales (`aircraft`, `airlines`, `airports`, `flight_summary_data`, `individual_flights`), il s'agit de :
-
-- Calculer le nombre de vols par modèle d’avion  
-- Déterminer le nombre total de passagers par aéroport  
-- Identifier l’année de meilleure performance en RPM par compagnie  
-- Identifier l’année de meilleure performance en ASM par compagnie  
-- Bonus : Trouver le top 5 des compagnies en RPM total  
-
----
-
-## Contenu du repo
-
-- `create_and_load_tables.sql` : Script complet pour créer toutes les tables et insérer les données  
-- `analysis_queries.sql` : Toutes mes requêtes SQL, question par question, avec commentaires et explications  
-- `/screenshots` : Captures d’écran des résultats obtenus dans Snowflake, illustrant chaque question traitée  
-- `/results` : Exports CSV des résultats des requêtes pour chaque question, permettant une analyse approfondie
+aircraft-data-analysis
+│── create_and_load_tables.sql   # SQL script to create tables and insert data
+│── analysis_queries.sql         # SQL queries answering project questions
+│── README.md                   # This project documentation
+│── /screenshots                # Screenshots of query results in Snowflake
+│── /results                    # CSV exports of query results
 
 ---
 
-## Comment utiliser ce projet
+## 🔧 Usage Instructions
 
-1. **Créer la base et les tables**  
-   Exécuter le script `create_and_load_tables.sql` dans Snowflake pour préparer la base de données.  
-
-2. **Exécuter les requêtes d’analyse**  
-   Copier-coller les requêtes du fichier `analysis_queries.sql` dans Snowflake pour obtenir les réponses aux questions du projet.  
-
-3. **Consulter les résultats**  
-   - Les fichiers CSV dans `/results` contiennent les données brutes exportées depuis Snowflake pour chaque question.  
-   - Les captures d’écran dans `/screenshots` montrent les résultats directement dans l’interface Snowflake, attestant du bon fonctionnement des requêtes.
-
----
-
-## Remarques
-
-- Toutes les données sont chargées via le script SQL, il n’y a pas de fichiers CSV sources externes.  
-- Le projet met en avant la capacité à manipuler de grandes bases de données dans un environnement cloud SQL (Snowflake), à écrire des requêtes complexes et à extraire des insights pertinents.  
-- Le repo est organisé pour faciliter la compréhension, la reproduction et la validation du travail.
+1. **Clone the repository:**
+```bash
+git clone https://github.com/yourusername/aircraft-data-analysis.git
+cd aircraft-data-analysis
+```
+2. **Load the data in Snowflake** by executing create_and_load_tables.sql
+3. **Run the SQL queries** from analysis_queries.sql to reproduce the analysis.
+4.	**Check the /results folder** for CSV exports of query results.
+5.	**Review the /screenshots folder** for visual confirmation of query outputs.
 
 ---
 
-## Contact
+## 📊 Key Insights  
+- Number of flights per aircraft model.  
+- Total passengers per airport.  
+- Best year for RPM and ASM metrics per airline.  
+- Top 5 airlines by RPM total.
 
-N’hésitez pas à me contacter pour toute question ou collaboration !
+## 🗂️ Results and Visual Proof  
+- **CSV files** in `/results` contain raw exported query results for detailed analysis.  
+- **Screenshots** in `/screenshots` display results directly from Snowflake for proof of execution.
 
----
+## 🤝 Contributing  
+Feel free to fork and submit pull requests for improvements.
 
-*Fin du README*
+## 📜 License  
+Open-source under the [MIT License](LICENSE).
+
+## 📌 Author  
+**Marouan Mehdi Belkaaloul** – Data Analyst trainee at Jedha Bootcamp
