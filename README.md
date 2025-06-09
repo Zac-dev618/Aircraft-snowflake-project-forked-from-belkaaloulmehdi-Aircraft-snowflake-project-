@@ -29,7 +29,7 @@ aircraft-data-analysis
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/yourusername/aircraft-data-analysis.git
+git clone https://github.com/belkaaloulmehdi/aircraft-data-analysis.git
 cd aircraft-data-analysis
 ```
 2. **Load the data in Snowflake** by executing create_and_load_tables.sql
